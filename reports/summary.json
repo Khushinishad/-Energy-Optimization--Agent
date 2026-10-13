@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "source": "synthetic",
+    "generated_at": "2026-10-11T16:08:40",
+    "rows": 17520
+  },
+  "forecast": {
+    "best_model": "Hist Gradient Boosting",
+    "metrics": [
+      {
+        "model": "Naive (same hour yesterday)",
+        "MAE": 0.4752,
+        "RMSE": 0.8267,
+        "R2": 0.0705
+      },
+      {
+        "model": "Ridge (baseline)",
+        "MAE": 0.3136,
+        "RMSE": 0.4368,
+        "R2": 0.7405
+      },
+      {
+        "model": "Random Forest",
+        "MAE": 0.1185,
+        "RMSE": 0.2521,
+        "R2": 0.9136
+      },
+      {
+        "model": "Hist Gradient Boosting",
+        "MAE": 0.1169,
+        "RMSE": 0.2454,
+        "R2": 0.9181
+      }
+    ]
+  },
+  "anomaly": {
+    "n_flagged": 49,
+    "n_true": 58,
+    "precision": 0.5306122448979592,
+    "recall": 0.4482758620689655,
+    "f1": 0.48598130841121495
+  },
+  "clustering": {
+    "k": 3,
+    "silhouette": 0.405,
+    "counts": {
+      "Low-usage days": 415,
+      "High-usage days": 178,
+      "Moderate-usage days": 137
+    }
+  },
+  "rl": {
+    "test_days": 146,
+    "policies": {
+      "Always-on habit": {
+        "ac_kwh": 2410.5,
+        "cost": 18642.75,
+        "co2_kg": 1976.61,
+        "uncomfortable_hours": 4,
+        "occupied_hours": 2362,
+        "score": 2673.7
+      },
+      "Smart thermostat (rule)": {
+        "ac_kwh": 927.0,
+        "cost": 7864.5,
+        "co2_kg": 760.14,
+        "uncomfortable_hours": 228,
+        "occupied_hours": 2362,
+        "score": 1630.4
+      },
+      "RL agent (Q-learning)": {
+        "ac_kwh": 1405.5,
+        "cost": 10892.35,
+        "co2_kg": 1152.51,
+        "uncomfortable_hours": 18,
+        "occupied_hours": 2362,
+        "score": 1627.1
+      }
+    },
+    "kwh_saved": 1005.0,
+    "kwh_saved_pct_vs_habit": 41.7,
+    "cost_saved": 7750.4,
+    "co2_saved_kg": 824.1,
+    "trees_equivalent": 39.2
+  }
+}

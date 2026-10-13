@@ -1,0 +1,2 @@
+# Optional: IBM watsonx.ai (free Lite plan) for natural-language energy tips
+ibm-watsonx-ai
