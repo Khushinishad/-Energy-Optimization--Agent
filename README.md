@@ -179,8 +179,8 @@ Full step-by-step guide: **`docs/DEPLOYMENT_GUIDE.md`**.
 Key rules: the repo root must be the folder that contains `requirements.txt`, and the main file path on
 Streamlit Cloud is `app/dashboard.py`.
 
-**Live demo:** https://energy-optimization--agent.streamlit.app  
-**GitHub repository:** https://github.com/Khushinishad/-Energy-Optimization--Agent
+**Live demo:** https://ctjezkzppbpcmqbnyrablo.streamlit.app  
+**GitHub repository:** https://github.com/Khushinishad/-Energy-Optimization--Agent.git
 
 ## 12. Troubleshooting
 
